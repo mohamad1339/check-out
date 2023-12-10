@@ -1,0 +1,928 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: yekan1;
+}
+@font-face {
+  font-family: yekan1;
+  src: url(../font/IRANYekanMedium.woff2);
+}
+/*دکمه بالا*/
+#top {
+  border: unset;
+  padding: 7px;
+  border: solid 1px black;
+  border-radius: 3px;
+  background-color: #dfdada;
+  position: fixed;
+  left: 50px;
+  bottom: 15px;
+  display: none;
+  z-index: 1;
+}
+/*جستجوی کامپیوتر*/
+.search1 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #1c1c1ccd;
+  z-index: 1000;
+  display: none;
+}
+.search2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3b3a3a;
+  border-radius: 5px;
+  width: 400px;
+  border: unset;
+  height: 50px;
+  padding-right: 20px;
+  color: white;
+}
+.close {
+  background-color: #423e3e38;
+  border: unset;
+  position: absolute;
+  left: 0;
+  margin: 20px;
+  color: white;
+  font-size: x-large;
+  cursor: pointer;
+}
+/*جستجوی موبایل*/
+.search4 {
+  width: 100vh;
+  height: 100vh;
+  position: fixed;
+  background-color: #1c1c1ccd;
+  z-index: 1000;
+  display: none;
+}
+.search5 {
+  position: absolute;
+  top: 20%;
+  left: 65%;
+  background-color: #3b3a3a;
+  border-radius: 5px;
+  width: 200px;
+  border: unset;
+  height: 50px;
+  color: white;
+  text-align: center;
+  z-index: 999;
+}
+.clos {
+  background-color: #423e3e38;
+  border: unset;
+  color: white;
+  right: 42%;
+  font-size: x-large;
+  top: 1%;
+  cursor: pointer;
+  position: absolute;
+}
+/*هدر*/
+.heder2 {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+.heder {
+  width: 100%;
+  height: 62px;
+  background-color: #f6f6f8;
+  align-content: center;
+}
+.telegram > img {
+  width: 25px;
+  height: 25px;
+}
+.watsap {
+  width: 35px;
+  height: 35px;
+}
+.tel {
+  width: 28px;
+  height: 28px;
+}
+.heder1 {
+  align-items: center;
+}
+.ghey {
+  right: 40%;
+  top: 30%;
+  font-size: smaller;
+}
+.spa {
+  color: rgb(255, 0, 0);
+  font-size: small;
+}
+.pw {
+  padding-top: 8px;
+  cursor: pointer;
+}
+.pv {
+  cursor: pointer;
+}
+/* منو همبرگری*/
+.ham1 {
+  border: unset;
+  background-color: white;
+}
+.list1 {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 40vh;
+  right: 0;
+  display: none;
+}
+.g1 {
+  width: 40vh;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+.close10 {
+  background-color: rgba(0, 0, 0, 0);
+  border: unset;
+  color: white;
+  padding: 15px;
+  font-size: x-large;
+}
+.g2 {
+  cursor: pointer;
+  color: black;
+}
+.opa {
+  opacity: 1 !important;
+  z-index: 1;
+  height: inherit !important;
+}
+.open1 {
+  background-color: white;
+  font-size: large;
+  border: unset;
+}
+.list2 {
+  width: 30vh;
+  color: #656565;
+  opacity: 0;
+  height: 0;
+}
+
+.open2 {
+  background-color: white;
+  font-size: large;
+  border: unset;
+}
+.list3 {
+  width: 30vh;
+  color: #656565;
+  opacity: 0;
+  height: 0;
+}
+.open3 {
+  background-color: white;
+  font-size: large;
+  border: unset;
+}
+.list4 {
+  width: 30vh;
+  color: #656565;
+  opacity: 0;
+  height: 0;
+}
+
+.open4 {
+  background-color: white;
+  font-size: large;
+  border: unset;
+}
+.list5 {
+  width: 30vh;
+  color: #656565;
+  opacity: 0;
+  height: 0;
+}
+.open5 {
+  background-color: white;
+  font-size: large;
+  border: unset;
+}
+.list6 {
+  width: 30vh;
+  color: #656565;
+  opacity: 0;
+  height: 0;
+}
+
+.open6 {
+  background-color: white;
+  font-size: large;
+  border: unset;
+}
+.list7 {
+  width: 30vh;
+  color: #656565;
+  opacity: 0;
+  height: 0;
+}
+
+.list6 > p {
+  color: #656565;
+  font-size: small;
+}
+.list5 > p {
+  color: #656565;
+  font-size: small;
+}
+.list4 > p {
+  color: #656565;
+  font-size: small;
+}
+.list3 > p {
+  color: #656565;
+  font-size: small;
+}
+.list7 > p {
+  color: #656565;
+  font-size: small;
+}
+.list2 > p {
+  color: #656565;
+  font-size: small;
+}
+.ham {
+  opacity: 0;
+}
+
+.meno3 {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  color: black;
+}
+
+.meno3 span {
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: black;
+  left: 50%;
+  top: 50%;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+span#vertical {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+span#vertica2 {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+span#vertica3 {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+span#vertica4 {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+span#vertica5 {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+span#vertica6 {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+span.hide {
+  transform: translate(-50%, -50%) rotate(0) !important;
+}
+/*منوی اصلی*/
+
+.li > a {
+  text-decoration: none;
+  color: #3b3a3a;
+  font-size: 13px;
+  transition: all 300ms linear;
+}
+.li {
+  list-style: none;
+}
+
+.navbar-brand > img {
+  width: 80px;
+  height: 80px;
+}
+
+li:hover a {
+  color: blue;
+}
+
+.active {
+  color: blue !important;
+}
+
+.gh {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  line-height: 38px;
+}
+
+/*ساب منو*/
+.ka {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.91);
+  transition: all 300ms linear;
+  width: 200px;
+  border-radius: 5px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+
+.ka > p {
+  cursor: pointer;
+  color: #3b3a3a;
+  font-size: small;
+  padding: 2px 15px;
+}
+.li:hover > .ka {
+  opacity: 1;
+  border: 1px groove rgb(131, 130, 130);
+  height: max-content;
+}
+
+.ood {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.91);
+  transition: all 300ms linear;
+  width: 200px;
+  border-radius: 5px;
+  opacity: 0;
+  border: 1px groove rgb(131, 130, 130);
+  margin-top: 10px;
+  height: 0;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+.ood > p {
+  cursor: pointer;
+  color: #3b3a3a;
+  font-size: small;
+  padding: 2px 15px;
+}
+.li:hover > .ood {
+  opacity: 1;
+  border: 1px groove rgb(131, 130, 130);
+  height: max-content;
+}
+
+.back {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.91);
+  transition: all 300ms linear;
+  width: 200px;
+  border-radius: 5px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+.back > p {
+  cursor: pointer;
+  color: #3b3a3a;
+  font-size: small;
+  padding: 2px 15px;
+}
+.li:hover > .back {
+  opacity: 1;
+  border: 1px groove rgb(131, 130, 130);
+  height: max-content;
+}
+.dec {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.91);
+  transition: all 300ms linear;
+  width: 200px;
+  border-radius: 5px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+.dec > p {
+  cursor: pointer;
+  color: #3b3a3a;
+  font-size: small;
+  padding: 2px 15px;
+}
+.li:hover > .dec {
+  opacity: 1;
+  border: 1px groove rgb(131, 130, 130);
+  height: max-content;
+}
+.posh {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.91);
+  transition: all 300ms linear;
+  width: 200px;
+  border-radius: 5px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+.posh > p {
+  cursor: pointer;
+  color: #3b3a3a;
+  font-size: small;
+  padding: 2px 15px;
+}
+.li:hover > .posh {
+  opacity: 1;
+  border: 1px groove rgb(131, 130, 130);
+  height: max-content;
+}
+
+.ziv {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.91);
+  transition: all 300ms linear;
+  width: 200px;
+
+  border-radius: 5px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+.ziv > p {
+  cursor: pointer;
+  color: #3b3a3a;
+  font-size: small;
+  padding: 2px 15px;
+}
+.li:hover > .ziv {
+  opacity: 1;
+  border: 1px groove rgb(131, 130, 130);
+  height: max-content;
+}
+
+/*آیکون منو*/
+.search {
+  padding-right: 150px;
+  padding-top: 33px;
+}
+.s4 {
+  cursor: pointer;
+  border: unset;
+  background-color: white;
+}
+.s1 {
+  cursor: pointer;
+  border: unset;
+  background-color: white;
+}
+/*بنر پرداخت*/
+.baner {
+  background-image: url(../media/pard.jpg);
+  height: 130px;
+  background-position: top center;
+}
+.matn {
+  font-size: x-large;
+  font-weight: 100px;
+}
+/*کد تخفیف*/
+.code {
+  background-color: #d9edf7;
+}
+#codet {
+  display: none;
+}
+.block {
+  display: block !important;
+}
+.matn1 {
+  color: #528bb4;
+  font-size: 13px;
+}
+.matn2 {
+  border: unset;
+  background-color: #d9edf7;
+  color: #75a6cf;
+  font-size: 13px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.matn3 {
+  color: #878dae;
+  font-size: 14px;
+}
+.code1 {
+  width: 350px;
+  padding-right: 10px;
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px groove #a6a6a6;
+}
+.code2 {
+  padding: 5px 20px;
+  border-radius: 30px;
+  font-size: 13px;
+  transition: all 300ms linear;
+}
+.code2:hover {
+  background-color: #56cfe1;
+  color: white;
+}
+.matn4 {
+  width: 160px;
+}
+.code3 {
+  position: absolute;
+  top: 85px;
+  display: none;
+  color: red;
+  border: 1px solid red;
+  font-size: smaller;
+  padding: 0px 20px;
+}
+
+/*فرم ثبت نام*/
+.form2 * span {
+  color: red;
+  padding-right: 5px;
+}
+
+.form input{
+    border: 1px groove #a6a6a6;
+
+}
+.eror{
+  border: 1px groove red;
+  margin-top: 10px;
+  font-size: smaller;
+  height: 30px;text-align: center;
+  color: #656565;
+display: block ;
+border-radius: 5px;
+}
+.form-select{
+  border: 1px groove #a6a6a6;
+
+}
+.form2 label {
+  color: #909090;
+  font-size: 14px;
+}
+.form-select {
+  font-size: 14px;
+  color: #a5a3a3 !important;
+}
+#comment {
+  font-size: 12px;
+  color: #909090;
+  resize: none;
+}
+.ax3 {
+  width: 80px;
+  height: 80px;
+}
+.matn4 {
+  font-size: 12px;
+  text-align: center;
+}
+.accordion-body {
+  background-color: #ebebeb;
+}
+.box {
+  border: 1px solid #909090;
+  padding: 15px;
+  border-radius: 10px;
+}
+.box1 {
+  border-bottom: 1px solid #909090;
+}
+.sabt {
+  padding: 7px 25px;
+  border-radius: 30px;
+  transition: all 300ms linear;
+}
+.sabt:hover {
+  background-color: #56cfe1;
+  color: white;
+}
+.matn5 {
+  color: #777676;
+  font-size: small;
+}
+.pardakht {
+  border: 1px solid #909090;
+  border-radius: 10px;
+}
+label.accordion {
+  cursor: pointer;
+}
+.accordion-body {
+  font-size: smaller;
+  color: #777676;
+  height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transform: all 0.25s ease;
+}
+.accordion-body.show {
+  height: max-content !important;
+  max-height: 300px !important;
+  padding: 16px;
+}
+
+/*فوتر*/
+.box3 img {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.box3 p {
+  cursor: pointer;
+}
+.box9 img {
+  width: 160px;
+  height: 60px;
+  text-align: center;
+}
+.box10 {
+  padding: 30px 30px;
+  align-items: center;
+}
+.box11 {
+  width: 200px;
+}
+.box11 img {
+  width: 150px;
+  height: 40px;
+}
+.box12 {
+  width: 200px;
+}
+.box12 > a {
+  text-decoration: none;
+  color: #a5a3a3;
+  font-size: smaller;
+}
+.box12 > a:hover {
+  color: rgb(85, 57, 136);
+}
+.box13 {
+  background-color: #f6f6f8;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.box14 a {
+  text-decoration: none;
+  color: #7a7777;
+}
+.hogh {
+  color: #7a7777;
+}
+.box14 a:hover {
+  color: rgb(85, 57, 136);
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+  .li > a {
+    font-size: 8px;
+  }
+  .search {
+    padding-right: 50px;
+  }
+}
+@media (max-width: 992px) and (min-width: 775px) {
+  .heder2 {
+    position: static;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+  }
+  .ham {
+    opacity: 1;
+  }
+  .meno {
+    display: none;
+  }
+  .ghey {
+    display: none;
+  }
+  .box15 {
+    display: none;
+  }
+  .box15 {
+    font-size: x-large;
+  }
+  .hogh {
+    font-size: x-large;
+  }
+  .hright {
+    justify-content: center;
+  }
+  .heder {
+    align-content: center;
+  }
+  .search {
+    margin-right: 320px;
+    padding-top: 10px;
+  }
+  .navbar-brand {
+    position: absolute;
+    right: 45%;
+  }
+  .telegram {
+    padding-top: 5px;
+  }
+}
+@media (max-width: 775px) and (min-width: 716px) {
+  .heder2 {
+    position: static;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+  }
+  .ham {
+    opacity: 1;
+  }
+  .hright {
+    justify-content: center;
+    font-size: x-small;
+  }
+  .meno {
+    display: none;
+  }
+  .heder {
+    align-content: center;
+  }
+  .search {
+    margin-right: 160px;
+    padding-top: 10px;
+  }
+  .navbar-brand {
+    position: absolute;
+    right: 45%;
+  }
+  .ghey {
+    display: none;
+  }
+
+  .telegram {
+    padding-top: 5px;
+  }
+  .s1 {
+    display: none;
+  }
+  .s2 {
+    display: none;
+  }
+  .s3 {
+    display: none;
+  }
+}
+
+@media (max-width: 716px) and (min-width: 525px) {
+  .heder2 {
+    position: static;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+  }
+  .ham {
+    opacity: 1;
+  }
+  .search {
+    padding-top: 10px;
+    margin-right: 230px;
+  }
+  .meno {
+    display: none;
+  }
+  .box15 {
+    font-size: small;
+  }
+  .hogh {
+    font-size: small;
+  }
+  .hright {
+    justify-content: center;
+    font-size: x-small;
+  }
+  .heder {
+    align-content: center;
+  }
+  .navbar-brand {
+    position: absolute;
+    right: 45%;
+  }
+  .ghey {
+    display: none;
+  }
+  .s1 {
+    display: none;
+  }
+  .s2 {
+    display: none;
+  }
+  .s3 {
+    display: none;
+  }
+  .telegram {
+    padding-top: 5px;
+  }
+}
+@media (max-width: 525px) and (min-width: 10px) {
+  .ham {
+    opacity: 1;
+  }
+  .ax1 {
+    width: 350px;
+    height: 350px;
+  }
+  .ax2 {
+    width: 75px;
+    height: 80px;
+  }
+  .heder2 {
+    position: static;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+  }
+
+  .hright {
+    justify-content: center;
+    font-size: x-small;
+  }
+  .meno {
+    display: none;
+  }
+  .box15 {
+    font-size: x-small;
+  }
+  .hogh {
+    font-size: x-small;
+  }
+  .heder {
+    align-content: center;
+  }
+  .s1 {
+    display: none;
+  }
+  .s2 {
+    display: none;
+  }
+  .s3 {
+    display: none;
+  }
+  .ghey {
+    display: none;
+  }
+  .search {
+    padding-top: 20px;
+    margin-right: 70px;
+  }
+  .navbar-brand {
+    position: absolute;
+    right: 43%;
+  }
+  .telegram {
+    padding-top: 5px;
+  }
+}
