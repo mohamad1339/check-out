@@ -122,20 +122,17 @@ let form1 = document.querySelectorAll(".form1");
 let eror = document.querySelectorAll(".eror");
 
 let taeid = document.getElementById("taeid");
-taeid.addEventListener("click", function () {
+taeid.addEventListener("click", () => {
   form1.forEach((elem, index) => {
     if (elem.value == "") {
       form1[index].style.border = "1px groove red";
-      eror[index].style.display="block"
-    }
-    else{
+      eror[index].style.display = "block";
+    } else {
       form1[index].style.border = "1px groove #a6a6a6";
-      eror[index].style.display="none"
-
+      eror[index].style.display = "none";
     }
   });
 });
-
 
 // ravesh pardakht
 let accordionsContainer = document.querySelectorAll(".accordion");

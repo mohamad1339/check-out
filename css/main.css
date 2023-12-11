@@ -594,7 +594,7 @@ li:hover a {
   font-size: smaller;
   height: 30px;text-align: center;
   color: #656565;
-display: block ;
+display: none ;
 border-radius: 5px;
 }
 .form-select{
