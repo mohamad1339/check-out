@@ -871,6 +871,9 @@ label.accordion {
   .ham {
     opacity: 1;
   }
+  .matn4 {
+    width: 130px;margin-top: 10px;
+  }
   .ax1 {
     width: 350px;
     height: 350px;
